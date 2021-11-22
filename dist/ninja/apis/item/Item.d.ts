@@ -1,0 +1,34 @@
+import { Transformable } from "../../../common/classes";
+import { Sparkline } from "../../shared/models";
+import { Modifier } from "./models/Modifier";
+import { TradeInfo } from "./models/TradeInfo";
+export declare class Item extends Transformable {
+    id: number;
+    name: string;
+    mapTier: number;
+    levelRequired: number;
+    stackSize: number;
+    links: number;
+    itemClass: number;
+    sparkline: Sparkline;
+    lowConfidenceSparkline: Sparkline;
+    implicitModifiers: Modifier[];
+    explicitModifiers: Modifier[];
+    corrupted: boolean;
+    gemLevel: number;
+    gemQuality: number;
+    itemType: string;
+    chaosValue: number;
+    exaltedValue: number;
+    count: number;
+    detailsId: string;
+    listingCount: number;
+    icon?: string;
+    baseType?: string;
+    variant?: string;
+    prophecyText?: string;
+    artFilename?: string;
+    flavourText?: string;
+    tradeInfo?: TradeInfo;
+    mapRegion?: string;
+}

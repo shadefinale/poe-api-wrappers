@@ -12,7 +12,7 @@ pids
 *.pid.lock
 
 # Distribution
-dist/
+# dist/
 
 # Documentation
 docs/
